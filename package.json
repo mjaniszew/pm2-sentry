@@ -12,10 +12,6 @@
     "type": "git",
     "url": "https://github.com/mjaniszew/pm2-sentry"
   },
-  "config": {
-    "conf_var_1": true,
-    "conf_var_2": "myvalue"
-  },
   "apps": [
     {
       "merge_logs": true,
