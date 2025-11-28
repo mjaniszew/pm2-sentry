@@ -25,10 +25,11 @@ pm2.launchBus(function(err, pm2_bus) {
         // do not repeat the message field in the additional data
         delete data[conf.message_field];
       }
+      data.process = packet.process.name;
       Sentry.logger.info(message, data);
     } catch (e) {
       // send pm2 logs as string message if unable to parse json
-      Sentry.logger.info(packet.data);
+      Sentry.logger.info(packet.data, { process: packet.process.name });
     }
   })
 })
