@@ -1,0 +1,28 @@
+{
+  "name": "pm2-sentry",
+  "version": "0.0.1",
+  "description": "Send PM2 logs to Sentry",
+  "main": "app.js",
+  "dependencies": {
+    "@sentry/node": "10.27.0",
+    "pm2": "6.0.14",
+    "pmx": "1.6.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjaniszew/pm2-sentry"
+  },
+  "config": {
+    "conf_var_1": true,
+    "conf_var_2": "myvalue"
+  },
+  "apps": [
+    {
+      "merge_logs": true,
+      "max_memory_restart": "200M",
+      "script": "app.js"
+    }
+  ],
+  "author": "Michal Janiszewski",
+  "license": "MIT"
+}
