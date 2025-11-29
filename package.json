@@ -1,6 +1,6 @@
 {
   "name": "pm2-sentry",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Send PM2 logs to Sentry",
   "main": "app.js",
   "dependencies": {
