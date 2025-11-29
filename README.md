@@ -1,7 +1,7 @@
 # pm2-sentry
 Forwards selected pm2 logs to Sentry.
 
-It supports logs in both RAW and JSON formats, as well as it allows for some basic customisation.
+It supports logs in both RAW and JSON formats of any structure. It does not use Sentry Scopes, Tags etc. at the moment. It simply pushes logs to Sentry in any given structure, with some basic capabilities to translate JSON as additional data passed to Sentry.
 
 # Installation & setup:
 
